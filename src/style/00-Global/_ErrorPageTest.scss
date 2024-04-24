@@ -14,7 +14,7 @@
 .glass {
   background-color: rgba(colors.$white, 0.06);
   box-shadow: 5px 15px 20px rgba(colors.$black, 0.06);
-  border: 3px solid rgba(colors.$white, 0.05);
+  border: 2px solid rgba(colors.$white, 0.05);
   border-radius: 50px;
   backdrop-filter: blur(100px);
   overflow: hidden;
@@ -37,13 +37,13 @@
   text-align: center;
 }
 .cardContent {
-  padding: 5px;
+  padding: 15px;
 }
 .title1 {
   font-family: "Staatliches", Impact, sans-serif;
   letter-spacing: 0.1em;
   font-size: 2rem;
-  color: colors.$white;
+  color: colors.$secondaryBis;
   line-height: 0.6em;
 }
 
@@ -54,7 +54,7 @@
   //line-height: 0.9em;
 
   font-size: 1rem;
-  color: colors.$white;
+  color: colors.$tertiary;
 }
 
 .paragraph {

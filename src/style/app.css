@@ -38,7 +38,7 @@ body {
 .glass {
   background-color: rgba(250, 250, 250, 0.06);
   box-shadow: 5px 15px 20px rgba(13, 17, 20, 0.06);
-  border: 3px solid rgba(250, 250, 250, 0.05);
+  border: 2px solid rgba(250, 250, 250, 0.05);
   border-radius: 50px;
   backdrop-filter: blur(100px);
   overflow: hidden;
@@ -47,7 +47,7 @@ body {
 .glassFilter {
   height: 100%;
   width: 100%;
-  background: radial-gradient(circle, rgba(212, 255, 248, 0.05) 0%, rgba(190, 236, 255, 0.05) 100%);
+  background: radial-gradient(circle, rgba(212, 255, 248, 0.15) 0%, rgba(190, 236, 255, 0.05) 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,14 +62,14 @@ body {
 }
 
 .cardContent {
-  padding: 5px;
+  padding: 15px;
 }
 
 .title1 {
   font-family: "Staatliches", Impact, sans-serif;
   letter-spacing: 0.1em;
   font-size: 2rem;
-  color: #FAFAFA;
+  color: #9AEBA3;
   line-height: 0.6em;
 }
 
@@ -78,7 +78,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-size: 1rem;
-  color: #FAFAFA;
+  color: #DAFDBA;
 }
 
 .paragraph {
