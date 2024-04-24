@@ -1,0 +1,15 @@
+// By color
+$black: #0D1114;
+$white: #FAFAFA;
+
+// By use
+$primary: #012030;
+$primaryBis: #13678A;
+$secondary: #45C4B0;
+$secondaryBis: #9AEBA3;
+$tertiary: #DAFDBA;
+
+// Gradient
+$GradientA: linear-gradient(30deg, $primary 0%, $primaryBis 35%, $tertiary 100%);
+$GradientB: radial-gradient(circle, rgba(212,255,248,0.05) 0%, rgba(190,236,255,0.05) 100%);
+

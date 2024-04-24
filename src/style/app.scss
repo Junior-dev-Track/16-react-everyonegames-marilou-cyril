@@ -1,3 +1,10 @@
-//00-Global
-@import "./00-Global/reset";
-@import "./00-Global/test";
+// Global
+@use "./00-Global/reset";
+@use "./00-Global/test";
+@use "./00-Global/ErrorPageTest";
+
+// Color
+@use "./01-Color/colors";
+
+// Font
+@use "./02-Font/fonts";

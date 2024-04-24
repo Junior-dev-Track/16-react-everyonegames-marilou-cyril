@@ -1,0 +1,16 @@
+@use "../01-Color/colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  height: 100vh;
+  height: 100dvh;
+  width: 100vw;
+  overflow: hidden;
+}

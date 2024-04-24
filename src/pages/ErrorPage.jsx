@@ -1,17 +1,20 @@
-import { useRouteError } from "react-router-dom";
-
 const ErrorPage = () => {
 
     return (
-        <div id="error-page">
-            <h1>Oops!</h1>
-            <p>Sorry, an unexpected error has occurred.</p>
-            <p>
-            </p>
-        </div>
+        <>
+            <div className={'ErrorPage'}>
+                <div className="glass card">
+                    <div className="glassFilter">
+                        <div className="cardContent">
+                            <h1 className={'title1 txtShadow'}>Error 404</h1>
+                            <h2 className="title2 txtShadow">Sorry</h2>
+                            <p className={'paragraph txtShadow'}>an unexpected error has occurred.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
     );
 }
 
 export default ErrorPage;
-
-//Todo : Ajouter une gestion des erreurs
