@@ -1,12 +1,13 @@
 import { useState } from 'react'
 
+
 function App() {
 
   return (
-    <>
-        <div className="test"></div>
-
-    </>
+      <Switch>
+          {/*<Route exact path="/" component={Home} />  */}
+          {/*<Route component={NotFound} />*/}
+      </Switch>
   )
 }
 
