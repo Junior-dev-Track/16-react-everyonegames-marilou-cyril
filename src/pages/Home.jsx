@@ -1,4 +1,6 @@
+import SearchBar from "../component/SearchBar.jsx";
 import Dock from '../component/Dock.jsx'
+
 
 const Home = () => {
 
@@ -8,8 +10,7 @@ const Home = () => {
                 <h1 className={'logoH1'}> Realm </h1>
                 <h2 className={'logoH2'}> Unity</h2>
             </div>
-            <div className="searchBar"></div>
-
+            <SearchBar />
             <Dock />
         </main>
 )

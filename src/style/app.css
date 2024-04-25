@@ -126,6 +126,24 @@ body {
   backdrop-filter: blur(100px);
 }
 
+.button {
+  background-color: #9AEBA3;
+  color: #F1F7F6;
+  margin: 0;
+  padding: 6px;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.25s ease;
+}
+
+.button:hover {
+  background-color: #45C4B0;
+}
+
+.button:active {
+  background-color: #13678A;
+}
+
 .dock {
   grid-column: 3/span 12;
   grid-row: 18/span 1;
@@ -154,11 +172,35 @@ body {
 }
 
 .searchBar {
-  background-color: rgba(19, 103, 138, 0.4);
+  align-self: center;
   grid-column: 3/span 12;
   grid-row: 1/span 1;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.searchBarInput {
+  height: 30px;
+  border: none;
+  background-color: rgba(19, 103, 138, 0.4);
   border-radius: 16px;
   overflow: hidden;
+  padding: 10px;
+  flex: 1;
+}
+
+.searchBarInput {
+  color: #9AEBA3;
+  font-size: 0.8rem;
+}
+
+.searchBarInput::placeholder {
+  color: #13678A;
+}
+
+.searchBarInput:focus {
+  outline: none;
 }
 
 /*# sourceMappingURL=app.css.map */

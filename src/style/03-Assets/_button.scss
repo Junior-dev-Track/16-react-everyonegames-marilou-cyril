@@ -1,0 +1,18 @@
+@use "../01-Color/colors";
+
+.button {
+  background-color: colors.$secondaryBis;
+  color: colors.$white;
+  margin: 0;
+  padding: 6px;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.25s ease;
+}
+
+.button:hover {
+  background-color: colors.$secondary;
+}
+.button:active {
+  background-color: colors.$primaryBis;
+}
