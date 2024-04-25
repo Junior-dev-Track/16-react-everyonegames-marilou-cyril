@@ -1,0 +1,90 @@
+@use "../01-Color/colors";
+
+.home {
+  flex: 1;
+  height: 100vh;
+  height: 100dvh;
+  width: 100wh;
+  overflow: hidden;
+  background-color: colors.$primary;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(18, 1fr);
+  font-family: Sarabun, Arial, sans-serif;
+  color: colors.$white;
+}
+
+.homeBackground {
+  height: 100%;
+  width: 100%;
+  grid-row: 1 / span 18;
+  grid-column: 1 / span 18;
+  object-fit: cover;
+  object-position: center;
+
+  background-size: cover ;
+  background-position: center ;
+  background-repeat: no-repeat ;
+
+  .backgroundFilter {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(colors.$primary, 0.8);
+  }
+}
+
+.homeContent {
+  grid-row: 1 / span 18;
+  grid-column: 1 / span 18;
+  padding: 1vh 1vw;
+
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(18, 1fr);
+}
+
+// Header
+.Header {
+  display: grid;
+  grid-row: 1;
+  grid-column: 1 / span 18;
+}
+
+
+
+
+// Dock
+.dock {
+  grid-column: 7 / 12;
+  grid-row: 18 / span 1;
+}
+.homeDetails {
+  grid-row: 16 / span 1;
+  grid-column: 1 / span 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+
+
+}
+.homeTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: 'Staatliches', sans-serif;
+}
+
+.homeList {
+  //background-color: white;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Sarabun", arial, sans-serif;
+  font-weight: 600;
+  color: colors.$secondaryBis;
+  text-transform: uppercase;
+  line-height: 0.5em;
+  gap: 10px
+}

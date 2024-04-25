@@ -3,11 +3,11 @@
 .glass {
   height: 100%;
   width: 100%;
-  background-color: rgba(colors.$white, 0.06);
+  background-color: rgba(colors.$white, 0.3);
   box-shadow: 5px 15px 20px rgba(colors.$black, 0.06);
   border: 2px solid rgba(colors.$white, 0.05);
-  backdrop-filter: blur(100px);
-  //overflow: hidden;
+  filter: blur(5px);
+  overflow: hidden;
 }
 
 .glassFilter {
@@ -18,5 +18,5 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(100px);
+  backdrop-filter: blur(30px);
 }

@@ -1,9 +1,17 @@
 @use "../01-Color/colors";
 
+.Header {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+// Logo
 .logo {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
   //background-color: #9AEBA3;
+
 }
 
 .logoH1 {
@@ -20,3 +28,11 @@
   font-size: 1rem;
   color: colors.$tertiary;
 }
+
+// SearchBar
+.searchBar {
+  align-self: center;
+  grid-column: 3 / span 12;
+  grid-row: 1 / span 1;
+}
+

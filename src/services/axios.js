@@ -10,11 +10,14 @@ export class ApiClient {
         console.log('test');
     }
 
-    async get(search) {
+    async get(search, details = '') {
         try {
-            const apiLogin = `?key=${this.apiKey}`;
-            const response = await axios.get(this.apiUrl + search + apiLogin);
-                console.log(response.data);
+            const apiLogin = `&key=${this.apiKey}`;
+            // console.log(apiLogin)
+            // const apiRequest = this.apiUrl + search + apiLogin
+            // console.log(apiRequest)
+            const response = await axios.get(this.apiUrl + search + '?' + details + apiLogin);
+            // console.log(response.data);
                 return response.data;
         } catch (error) {
             if (error.response) {
@@ -27,15 +30,5 @@ export class ApiClient {
         }
     }
 }
-
-// Récupération des variables d'environnement
-// const apiKey = process.env.VITE_API_KEY;
-// const apiUrl = process.env.VITE_API_URL;
-
-// Création d'une instance de ApiClient avec les variables d'environnement
-// const request = new ApiClient(apiUrl, apiKey);
-
-// Utilisation de l'instance pour récupérer les plateformes
-// const platforms = await request.get('plateforms');
 
 export default ApiClient;

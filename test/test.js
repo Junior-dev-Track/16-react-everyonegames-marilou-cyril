@@ -1,10 +1,8 @@
 import axios from "axios";
 
-
-
 async function get() {
     try {
-        const response = await axios.get('https://api.rawg.io/api/games?key=$7ab00cfa8eb94750873da50b5b7617ec');
+        const response = await axios.get('https://api.rawg.io/api/games?dates=2022-03-01,2022-03-31&key=3ccd80bcce4846a6917c760924caaa96');
         console.log(response.data);
         return response.data;
     } catch (error) {

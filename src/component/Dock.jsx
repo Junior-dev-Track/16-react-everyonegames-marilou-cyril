@@ -1,12 +1,10 @@
 const Dock = () => {
 
     return (
-        <footer className={'dock'}>
-            <div className="glass">
+        <footer className='dock'>
                 <div className="glassFilter">
 
                 </div>
-            </div>
         </footer>
     )
 }

@@ -15,17 +15,4 @@ body {
   overflow: hidden;
 }
 
-.home {
-  flex: 1;
-  height: 100vh;
-  height: 100dvh;
-  width: 100wh;
-  overflow: hidden;
-  background-color: colors.$primary;
-  padding: 1vh 1vw;
-  display: grid;
-  grid-template-columns: repeat(18, 1fr);
-  grid-template-rows: repeat(18, 1fr);
-  font-family: Sarabun, Arial, sans-serif;
-  color: colors.$white;
-}
+
