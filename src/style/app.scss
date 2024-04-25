@@ -1,10 +1,17 @@
 // Global
-@use "./00-Global/reset";
+@use "00-Global/reset";
 @use "./00-Global/test";
-@use "./00-Global/ErrorPageTest";
+@use "../../test/ErrorPageTest";
 
 // Color
 @use "./01-Color/colors";
+@use "./01-Color/glass";
+
 
 // Font
 @use "./02-Font/fonts";
+
+// Asset
+@use "./03-Assets/dock";
+@use "./03-Assets/logo";
+@use "./03-Assets/searchBar";

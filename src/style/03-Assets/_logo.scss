@@ -1,0 +1,22 @@
+@use "../01-Color/colors";
+
+.logo {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  //background-color: #9AEBA3;
+}
+
+.logoH1 {
+  font-family: "Staatliches", Impact, sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 2rem;
+}
+
+.logoH2 {
+  font-family: "Lalezar", arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.65em;
+  line-height: 0.5em;
+  font-size: 1rem;
+  color: colors.$tertiary;
+}

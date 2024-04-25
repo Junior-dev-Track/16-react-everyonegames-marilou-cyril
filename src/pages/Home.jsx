@@ -1,11 +1,18 @@
+import Dock from '../component/Dock.jsx'
+
 const Home = () => {
 
     return (
-        <div>
-            <h1>Welcome to my app!</h1>
-            <p>This is the home page.</p>
-        </div>
-    )
+        <main className={'home'}>
+            <div className="logo">
+                <h1 className={'logoH1'}> Realm </h1>
+                <h2 className={'logoH2'}> Unity</h2>
+            </div>
+            <div className="searchBar"></div>
+
+            <Dock />
+        </main>
+)
 }
 
 export default Home

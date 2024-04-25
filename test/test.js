@@ -1,4 +1,4 @@
-import ApiClient from '../script/axios.js';
+import ApiClient from '../src/script/axios.js';
 import dotenv from 'dotenv';
 dotenv.config({ path: '../../.env' });
 

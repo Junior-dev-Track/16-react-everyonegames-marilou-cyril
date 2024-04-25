@@ -15,6 +15,21 @@ body {
   overflow: hidden;
 }
 
+.home {
+  flex: 1;
+  height: 100vh;
+  height: 100dvh;
+  width: 100wh;
+  overflow: hidden;
+  background-color: #012030;
+  padding: 1vh 1vw;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(18, 1fr);
+  font-family: Sarabun, Arial, sans-serif;
+  color: #F1F7F6;
+}
+
 .test {
   background: red;
   width: 50px;
@@ -35,19 +50,19 @@ body {
   grid-template-rows: repeat(18, 1fr);
 }
 
-.glass {
-  background-color: rgba(250, 250, 250, 0.06);
-  box-shadow: 5px 15px 20px rgba(13, 17, 20, 0.06);
-  border: 2px solid rgba(250, 250, 250, 0.05);
+.glassyest {
+  background-color: rgba(241, 247, 246, 0.06);
+  box-shadow: 5px 15px 20px rgba(8, 26, 26, 0.06);
+  border: 2px solid rgba(241, 247, 246, 0.05);
   border-radius: 50px;
   backdrop-filter: blur(100px);
   overflow: hidden;
 }
 
-.glassFilter {
+.glassFiltertest {
   height: 100%;
   width: 100%;
-  background: radial-gradient(circle, rgba(212, 255, 248, 0.15) 0%, rgba(190, 236, 255, 0.05) 100%);
+  background: radial-gradient(circle, rgba(212, 255, 248, 0.05) 0%, rgba(190, 236, 255, 0.05) 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,11 +99,66 @@ body {
 .paragraph {
   font-family: "Sarabun", arial, sans-serif;
   font-size: 1rem;
-  color: #FAFAFA;
+  color: #F1F7F6;
 }
 
 .txtShadow {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.glass {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(241, 247, 246, 0.06);
+  box-shadow: 5px 15px 20px rgba(8, 26, 26, 0.06);
+  border: 2px solid rgba(241, 247, 246, 0.05);
+  backdrop-filter: blur(100px);
+}
+
+.glassFilter {
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle, rgba(212, 255, 248, 0.05) 0%, rgba(190, 236, 255, 0.05) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(100px);
+}
+
+.dock {
+  grid-column: 3/span 12;
+  grid-row: 18/span 1;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.logo {
+  grid-column: 1/span 1;
+  grid-row: 1/span 1;
+}
+
+.logoH1 {
+  font-family: "Staatliches", Impact, sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 2rem;
+}
+
+.logoH2 {
+  font-family: "Lalezar", arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.65em;
+  line-height: 0.5em;
+  font-size: 1rem;
+  color: #DAFDBA;
+}
+
+.searchBar {
+  background-color: rgba(19, 103, 138, 0.4);
+  grid-column: 3/span 12;
+  grid-row: 1/span 1;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=app.css.map */
