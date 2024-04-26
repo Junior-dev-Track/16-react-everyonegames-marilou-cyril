@@ -16,16 +16,46 @@ const { count, next, previous, results } = await request.get(`games`, 'dates=202
 const randomIndex = Math.floor(Math.random() * results.length);
 
 // Accéder à l'élément aléatoire à partir du tableau en utilisant l'index généré
-const randomResult = results[randomIndex];
+const randomResult = results[5];
 
 
 // Utiliser l'élément aléatoire
 
 
+/*
+const sensitivities = [
+    25, - 30, 10
+];
+
+    let homeBackground = document.querySelector('.homeBackground')
+    homeBackground.addEventListener("mousemove", e =>{
+        setTimeout(() =>{
+            const x = e.clientX;
+            const y = e.clientY;
+            const w = homeBackground.offsetWidth /2;
+            const h = homeBackground.offsetHeight /2;
+            let convertX = ((x - w) * sensitivities[i]) /w;
+            let convertY = ((y - h) * sensitivities[i]) /h;
+        
+            images[i].style.transform = `
+            translateX(${convertX}px)
+            translateY(calc(-50% - ${convertYp}x))`;
+        }, 200);
+       
+    });
+*/
 
 
 
 const Home = () => {
+
+
+
+
+
+
+
+
 
     return (
         <>
