@@ -66,10 +66,8 @@ const Home = () => {
 
             <main className={'home'}>
 
-                <div className="homeBackground" onClick={''}
+                <div className="homeBackground"
                      style={{backgroundImage: `url(${randomResult.background_image})`}}>
-
-                    {/*<img src={randomResult.background_image} alt="" className="homeBackground"/>*/}
 
                     <div className="backgroundFilter" />
 

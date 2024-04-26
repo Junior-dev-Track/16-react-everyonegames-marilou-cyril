@@ -6,7 +6,8 @@
   //height: 100vh;
   //height: 100dvh;
   //width: 100wh;
-  background-color: colors.$primary;
+  //background-color: colors.$primary;
+  background-color: white;
   //display: grid;
   //grid-template-columns: repeat(18, 1fr);
   //grid-template-rows: repeat(18, 1fr);
@@ -17,7 +18,7 @@
 .gameCards{
   //background-color: red;
   display: flex;
-
+  //display: none;
   flex-wrap: wrap;
   justify-content: space-between;
   gap : 10px;
@@ -29,7 +30,7 @@
   overflow: hidden;
   width: 300px;
   height: 400px;
-  //margin: 10px ;
+  margin: 10px ;
 }
 .gameImg {
   width: 100%;
