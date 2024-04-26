@@ -245,7 +245,8 @@ body {
 .homeBackground .backgroundFilter {
   height: 100%;
   width: 100%;
-  background-color: rgba(1, 32, 48, 0.8);
+  background: rgb(8, 26, 26);
+  background: linear-gradient(35deg, rgb(8, 26, 26) 0%, rgb(1, 32, 48) 13%, rgb(11, 55, 66) 33%, rgba(69, 196, 176, 0.5) 100%);
 }
 
 .homeContent {
