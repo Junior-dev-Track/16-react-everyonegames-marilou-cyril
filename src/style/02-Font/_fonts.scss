@@ -1,3 +1,20 @@
 @use "../01-Color/colors";
 @import url('https://fonts.googleapis.com/css2?family=Gurajada&family=Passion+One:wght@400;700;900&family=Reddit+Mono:wght@200..900&display=swap');
 
+.title1 {
+  font-family: "Passion One", Impact, sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 2rem;
+  //color: colors.$secondaryBis;
+  //line-height: 0.6em;
+}
+
+.title2 {
+  font-family: "Gurajada", arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  //line-height: 0.9em;
+
+  font-size: 1.5rem;
+  //color: colors.$tertiary;
+}

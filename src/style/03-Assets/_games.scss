@@ -1,0 +1,37 @@
+@use "../01-Color/colors";
+
+.games
+{
+  //flex: 1;
+  //height: 100vh;
+  //height: 100dvh;
+  //width: 100wh;
+  background-color: colors.$primary;
+  //display: grid;
+  //grid-template-columns: repeat(18, 1fr);
+  //grid-template-rows: repeat(18, 1fr);
+  font-family: 'Reddit Mono', Arial, sans-serif;
+  color: colors.$white;
+}
+
+.gameCards{
+  //background-color: red;
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap : 10px;
+
+}
+.gameCardItem {
+  background-color: rgba(colors.$white,0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  height: 400px;
+  //margin: 10px ;
+}
+.gameImg {
+  width: 100%;
+}
+

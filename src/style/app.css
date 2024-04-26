@@ -12,7 +12,7 @@ body {
   height: 100vh;
   height: 100dvh;
   width: 100vw;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .test {
@@ -23,6 +23,19 @@ body {
 
 .none {
   display: none;
+}
+
+.title1 {
+  font-family: "Passion One", Impact, sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 2rem;
+}
+
+.title2 {
+  font-family: "Gurajada", arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 1.5rem;
 }
 
 .ErrorPage {
@@ -40,7 +53,6 @@ body {
   box-shadow: 5px 15px 20px rgba(8, 26, 26, 0.06);
   border: 2px solid rgba(241, 247, 246, 0.05);
   border-radius: 50px;
-  backdrop-filter: blur(100px);
   overflow: hidden;
 }
 
@@ -52,7 +64,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(100px);
 }
 
 .card {
@@ -63,22 +74,6 @@ body {
 
 .cardContent {
   padding: 15px;
-}
-
-.title1 {
-  font-family: "Staatliches", Impact, sans-serif;
-  letter-spacing: 0.1em;
-  font-size: 2rem;
-  color: #9AEBA3;
-  line-height: 0.6em;
-}
-
-.title2 {
-  font-family: "Lalezar", arial, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 1rem;
-  color: #DAFDBA;
 }
 
 .paragraph {
@@ -110,6 +105,19 @@ body {
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(30px);
+}
+
+.title1 {
+  font-family: "Passion One", Impact, sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 2rem;
+}
+
+.title2 {
+  font-family: "Gurajada", arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 1.5rem;
 }
 
 .button {
@@ -227,7 +235,7 @@ body {
   display: grid;
   grid-template-columns: repeat(18, 1fr);
   grid-template-rows: repeat(18, 1fr);
-  font-family: Sarabun, Arial, sans-serif;
+  font-family: "Reddit Mono", Arial, sans-serif;
   color: #F1F7F6;
 }
 
@@ -292,6 +300,31 @@ body {
   text-transform: uppercase;
   line-height: 0.5em;
   gap: 2vw;
+}
+
+.games {
+  background-color: #012030;
+  font-family: "Reddit Mono", Arial, sans-serif;
+  color: #F1F7F6;
+}
+
+.gameCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.gameCardItem {
+  background-color: rgba(241, 247, 246, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  height: 400px;
+}
+
+.gameImg {
+  width: 100%;
 }
 
 /*# sourceMappingURL=app.css.map */

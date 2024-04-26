@@ -16,7 +16,7 @@
   box-shadow: 5px 15px 20px rgba(colors.$black, 0.06);
   border: 2px solid rgba(colors.$white, 0.05);
   border-radius: 50px;
-  backdrop-filter: blur(100px);
+  //backdrop-filter: blur(100px);
   overflow: hidden;
 }
 
@@ -28,7 +28,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(100px);
+  //backdrop-filter: blur(100px);
 }
 
 .card {
@@ -39,23 +39,7 @@
 .cardContent {
   padding: 15px;
 }
-.title1 {
-  font-family: "Staatliches", Impact, sans-serif;
-  letter-spacing: 0.1em;
-  font-size: 2rem;
-  color: colors.$secondaryBis;
-  line-height: 0.6em;
-}
 
-.title2 {
-  font-family: "Lalezar", arial, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  //line-height: 0.9em;
-
-  font-size: 1rem;
-  color: colors.$tertiary;
-}
 
 .paragraph {
   font-family: "Sarabun", arial, sans-serif;
