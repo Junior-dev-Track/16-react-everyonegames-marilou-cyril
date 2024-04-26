@@ -34,18 +34,18 @@ const randomResult = results[5];
 
 const Home = () => {
 
-    const [isClicked, setIsClick] = useState(false)
+    // const [isClicked, setIsClick] = useState(false)
 
 
-    const handleClick = () => {
-        setIsClick(true); // Utilisation d'une fonction de mise à jour
-        alert('salut');
-
-        // Utilisation de setTimeout pour revenir à false après 1 seconde
-        setTimeout(() => {
-            setIsClick(false); // Utilisation d'une fonction de mise à jour
-        }, 1000);
-    };
+    // const handleClick = () => {
+    //     setIsClick(true); // Utilisation d'une fonction de mise à jour
+    //     alert('salut');
+    //
+    //     // Utilisation de setTimeout pour revenir à false après 1 seconde
+    //     setTimeout(() => {
+    //         setIsClick(false); // Utilisation d'une fonction de mise à jour
+    //     }, 1000);
+    // };
 
 
    //
@@ -66,7 +66,7 @@ const Home = () => {
 
             <main className={'home'}>
 
-                <div className="homeBackground" onClick={handleClick}
+                <div className="homeBackground" onClick={''}
                      style={{backgroundImage: `url(${randomResult.background_image})`}}>
 
                     {/*<img src={randomResult.background_image} alt="" className="homeBackground"/>*/}
