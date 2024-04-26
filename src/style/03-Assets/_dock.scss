@@ -1,10 +1,24 @@
 @use "../01-Color/colors";
 
 .dock {
+  grid-column: 7 / 12;
+  grid-row: 18 / span 1;
+  height: 33%;
+  width: 33%;
+  background-color: #9AEBA3;
   border-radius: 16px;
   overflow: hidden;
+  transition: all 0.6s ease;
+  justify-self: center;
+  align-self: end;
+}
+
+.dock:hover {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 1vh;
   backdrop-filter: blur(20px);
-  background-color: rgba(colors.$white, 0.2);
+  background-color: rgba(colors.$primaryBis, 0.2);
   box-shadow: 5px 15px 20px rgba(colors.$black, 0.06);
   border: 2px solid rgba(colors.$white, 0.05);
 }

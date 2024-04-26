@@ -54,37 +54,34 @@
 
 
 // Dock
-.dock {
-  grid-column: 7 / 12;
-  grid-row: 18 / span 1;
-}
 .homeDetails {
-  grid-row: 16 / span 1;
-  grid-column: 1 / span 3;
+  grid-row: 17 / span 1;
+  grid-column: 2 / span 6;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
-
-
 }
+
 .homeTitle {
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-family: 'Staatliches', sans-serif;
+  font-family: 'Passion One', sans-serif;
+  //color: red;
 }
 
 .homeList {
   //background-color: white;
   flex: 1;
   display: flex;
-  justify-content: space-between;
-  font-family: "Sarabun", arial, sans-serif;
+  justify-content: start;
+  font-family: "Guarajada", arial, sans-serif;
   font-weight: 600;
   color: colors.$secondaryBis;
+  font-size: 1rem;
   text-transform: uppercase;
   line-height: 0.5em;
-  gap: 10px
+  gap: 2vw;
 }
