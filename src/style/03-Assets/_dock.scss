@@ -1,7 +1,7 @@
 @use "../01-Color/colors";
 
 .dock {
-  border-radius: 30px;
+  //border-radius: 30px;
   overflow: hidden;
   position: relative;
   grid-column: 7 / 12;
@@ -12,7 +12,7 @@
   width: 90px;
   margin-bottom: 1vh;
   transition: all 0.6s ease;
-  border-radius: 16px;
+  border-radius: 13px;
 
   .glassFilter {
     justify-content: center;

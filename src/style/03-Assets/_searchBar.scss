@@ -30,3 +30,14 @@
   outline: none;
   background-color: colors.$primary;
 }
+
+.searchMode{
+  //height: 100%;
+  //width: 100%;
+  background-color: rgba(colors.$primaryBis, 0.5);
+  position: relative;
+  grid-row: 2 / span 17;
+  grid-column: 1 / span 18;
+  border-radius: 30px;
+}
+
