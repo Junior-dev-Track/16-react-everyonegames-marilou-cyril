@@ -18,15 +18,19 @@ const loadData = async (list, setList, search, details='') => {
     const storedList = loadFromLocalStorage(`${list}`);
     if (storedList.length > 0) {
         setList(storedList);
+        console.log('loaded from local storage')
+
 
     } else {
         const apiKey = import.meta.env.VITE_API_KEY;
         const apiUrl = import.meta.env.VITE_API_URL;
         const request = new ApiClient(apiUrl, apiKey);
         const { count, next, previous, results } = await request.get(search, details);
-
+        console.log(count)
+        console.log(results)
         setList(results);
         saveToLocalStorage(`${list}`, results)
+        console.log('loaded from API')
     }
 }
 

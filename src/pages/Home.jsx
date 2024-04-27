@@ -8,13 +8,21 @@ const Home = ({ list }) => {
     const [gameList, setGameList] = useState([]);
     const [randomResult, setRandomResult] = useState({});
 
+
+    const [gameList, setGameList] = useState()
+
+
     useEffect(() => {
-        if (list && list.length > 0) {
-            setGameList(list);
-            const randomIndex = Math.floor(Math.random() * list.length);
-            setRandomResult(list[randomIndex]);
+        localStorage.clear();
+        const loadedData = async () => {
+            await loadData(gameList, setGameList, 'games')
         }
-    }, [list]);
+
+        loadedData()
+        const randomIndex = Math.floor(Math.random() * list.length);
+        setRandomResult(list[randomIndex]);
+    }, []);
+
 
     return (
         <>
