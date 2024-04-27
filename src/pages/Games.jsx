@@ -1,9 +1,6 @@
-import { v4 as UUID } from 'react-uuid';
 import  Dock from '../component/Dock.jsx'
 import Header from "../component/Header.jsx";
-import xTimeAgo from "../services/dateManagement.js";
 import  ApiClient from "../services/axios.js";
-import React from "react";
 
 const apiKey = import.meta.env.VITE_API_KEY;
 const apiUrl = import.meta.env.VITE_API_URL;
@@ -22,7 +19,7 @@ const Games = () => {
                     {
                         results.map(game => (
                             <div key={crypto.randomUUID()} className="gameCardItem">
-                                <img  className="gameImg" src={`${game.background_image}`} alt={`${UUID}`}/>
+                                <img  className="gameImg" src={`${game.background_image}`} alt={`${game.name}`}/>
                                 <h3 className="title3">${game.name}</h3>
                             </div>
                         ))

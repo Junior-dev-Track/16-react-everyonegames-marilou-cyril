@@ -1,6 +1,5 @@
-import SearchMode from "./SearchMode.jsx";
 import ApiClient from "../services/axios.js";
-import React, {useEffect, useState} from "react";
+import {useEffect, useState} from "react";
 
 
 
