@@ -12,11 +12,11 @@ export class ApiClient {
 
     async get(search, details = '') {
         try {
-            const apiLogin = `&key=${this.apiKey}`;
-            // console.log(apiLogin)
-            // const apiRequest = this.apiUrl + search + apiLogin
-            // console.log(apiRequest)
-            const response = await axios.get(this.apiUrl + search + '?' + details + apiLogin);
+            const apiLogin = `key=${this.apiKey}`;
+            const details = details ? `&${details}`: '';
+            const apiRequest = this.apiUrl + search + '?' + details + apiLogin
+            console.log(apiRequest)
+            const response = await axios.get(apiRequest);
             // console.log(response.data);
                 return response.data;
         } catch (error) {

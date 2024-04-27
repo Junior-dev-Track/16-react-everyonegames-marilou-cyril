@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {loadData} from "../services/loadNsave.js";
+// import {loadData} from "../services/loadNsave.js";
 
 
 
