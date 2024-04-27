@@ -12,15 +12,21 @@
   justify-self: center;
   align-self: end;
 
-
+  .glassFilter {
+    justify-content: center;
+    align-items: center;
+  }
 
   .dockIcon {
     opacity: 0;
+    height: 3vh;
+    transition: all 1s ease;
   }
-
 }
 
-.dock {
+
+
+.dock:hover {
   height: 100%;
   width: 100%;
   margin-bottom: 1vh;
@@ -29,18 +35,7 @@
   box-shadow: 5px 15px 20px rgba(colors.$black, 0.06);
   border: 2px solid rgba(colors.$white, 0.05);
 
-  display: flex;
-  justify-content: start;
-  align-items: center;
-
   .dockIcon {
-    align-self: center;
-    justify-self: center;
-    background-color: white;
     opacity: 100%;
-    height: 100%;
-    aspect-ratio: 1/1;
-    object-fit: contain;
-    object-position: center;
   }
 }

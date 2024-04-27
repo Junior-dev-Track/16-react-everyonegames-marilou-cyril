@@ -25,7 +25,9 @@ const loadData = async (list, setList, search, details='') => {
         console.log('loading from API')
         const apiKey = import.meta.env.VITE_API_KEY;
         const apiUrl = import.meta.env.VITE_API_URL;
+        console.log('avant request')
         const request = new ApiClient(apiUrl, apiKey);
+        console.log('après request')
         const { count, next, previous, results } = await request.get(search, details);
         console.log(count)
         console.log(next)

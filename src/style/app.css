@@ -102,7 +102,6 @@ body {
   background: radial-gradient(circle, rgba(212, 255, 248, 0.05) 0%, rgba(190, 236, 255, 0.05) 100%);
   background-color: #081A1A;
   display: flex;
-  justify-content: center;
   backdrop-filter: blur(30px);
 }
 
@@ -151,11 +150,17 @@ body {
   justify-self: center;
   align-self: end;
 }
+.dock .glassFilter {
+  justify-content: center;
+  align-items: center;
+}
 .dock .dockIcon {
   opacity: 0;
+  height: 3vh;
+  transition: all 1s ease;
 }
 
-.dock {
+.dock:hover {
   height: 100%;
   width: 100%;
   margin-bottom: 1vh;
@@ -163,19 +168,9 @@ body {
   background-color: rgba(19, 103, 138, 0.2);
   box-shadow: 5px 15px 20px rgba(8, 26, 26, 0.06);
   border: 2px solid rgba(241, 247, 246, 0.05);
-  display: flex;
-  justify-content: start;
-  align-items: center;
 }
-.dock .dockIcon {
-  align-self: center;
-  justify-self: center;
-  background-color: white;
+.dock:hover .dockIcon {
   opacity: 100%;
-  height: 100%;
-  aspect-ratio: 1/1;
-  object-fit: contain;
-  object-position: center;
 }
 
 .Header {
