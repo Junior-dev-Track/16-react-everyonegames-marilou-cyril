@@ -9,9 +9,6 @@ const Home = ({ list }) => {
     const [randomResult, setRandomResult] = useState({});
 
 
-    const [gameList, setGameList] = useState()
-
-
     useEffect(() => {
         localStorage.clear();
         const loadedData = async () => {
