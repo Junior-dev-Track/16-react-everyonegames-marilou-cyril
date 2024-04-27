@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Dock from '../component/Dock.jsx';
 import Header from "../component/Header.jsx";
-// Importations retirées car non utilisées dans ce composant
-// import { loadData } from "../services/loadNsave.js";
 
 const Home = ({ list }) => {
     const [gameList, setGameList] = useState([]);
@@ -20,7 +18,7 @@ const Home = ({ list }) => {
 
     return (
         <>
-            <main className="home">
+            <main className="page home">
                 <div className="homeBackground" style={{backgroundImage: `url(${randomResult.background_image})`}}>
                     <div className="backgroundFilter" />
                 </div>

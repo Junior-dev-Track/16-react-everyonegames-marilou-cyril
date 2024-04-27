@@ -1,20 +1,26 @@
 @use "colors";
+$blur: 5px;
+
 
 .glass {
   height: 100%;
   width: 100%;
-  background-color: rgba(colors.$white, 0.3);
-  box-shadow: 5px 15px 20px rgba(colors.$black, 0.06);
-  border: 2px solid rgba(colors.$white, 0.05);
-  filter: blur(5px);
+  background-color: rgba(colors.$primary, 0.8);
+  box-shadow: 5px 15px 20px rgba(colors.$primary, 0.06);
+  border: 2px solid rgba(colors.$white, 0.01);
+  backdrop-filter: blur($blur);
+  -webkit-backdrop-filter: blur($blur);
   overflow: hidden;
+
+
+
 }
 
 .glassFilter {
   height: 100%;
   width: 100%;
   background: colors.$GradientB;
-  background-color: #081A1A;
   display: flex;
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur($blur);
+  -webkit-backdrop-filter: blur($blur);
 }

@@ -4,7 +4,12 @@
 .title1 {
   font-family: "Passion One", Impact, sans-serif;
   letter-spacing: 0.1em;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  grid-row: 2;
+  grid-column: 1;
+  position: relative;
+  text-transform: uppercase;
+
   //color: colors.$secondaryBis;
   //line-height: 0.6em;
 }

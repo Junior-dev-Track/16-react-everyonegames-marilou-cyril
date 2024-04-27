@@ -1,19 +1,5 @@
 @use "../01-Color/colors";
 
-.home {
-  flex: 1;
-  height: 100vh;
-  height: 100dvh;
-  width: 100wh;
-  overflow: hidden;
-  background-color: colors.$primary;
-  display: grid;
-  grid-template-columns: repeat(18, 1fr);
-  grid-template-rows: repeat(18, 1fr);
-  font-family: 'Reddit Mono', Arial, sans-serif;
-  color: colors.$white;
-}
-
 .homeBackground {
   height: 100%;
   width: 100%;
@@ -49,9 +35,6 @@
   grid-row: 1;
   grid-column: 1 / span 18;
 }
-
-
-
 
 // Dock
 .homeDetails {

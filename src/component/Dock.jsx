@@ -4,9 +4,9 @@ const Dock = () => {
 
     return (
         <footer className='dock'>
-                <div className="glassFilter">
+                <nav className="glassFilter">
                     <Link to={'/games'}><img src={'../../public/assets/svg/gameIcon.svg'} alt={'gameIcon'} className={'dockIcon'}/></Link>
-                </div>
+                </nav>
         </footer>
     )
 }

@@ -1,16 +1,18 @@
 @use "../01-Color/colors";
 
 .dock {
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
   grid-column: 7 / 12;
   grid-row: 18 / span 1;
-  height: 33%;
-  width: 33%;
-  background-color: #9AEBA3;
-  border-radius: 16px;
-  overflow: hidden;
-  transition: all 0.6s ease;
-  justify-self: center;
   align-self: end;
+  justify-self: center;
+  height: 8px;
+  width: 90px;
+  margin-bottom: 1vh;
+  transition: all 0.6s ease;
+  border-radius: 16px;
 
   .glassFilter {
     justify-content: center;
@@ -27,15 +29,30 @@
 
 
 .dock:hover {
-  height: 100%;
-  width: 100%;
-  margin-bottom: 1vh;
-  backdrop-filter: blur(20px);
-  background-color: rgba(colors.$primaryBis, 0.2);
-  box-shadow: 5px 15px 20px rgba(colors.$black, 0.06);
-  border: 2px solid rgba(colors.$white, 0.05);
+  height: 32px;
+  width: 300px;
 
   .dockIcon {
     opacity: 100%;
+  }
+}
+
+.home {
+  .dock {
+    background-color: rgba(colors.$white, 1);
+    box-shadow: 5px 15px 20px rgba(colors.$primaryBis, 0.06);
+  }
+  .dock:hover {
+    background-color: rgba(colors.$primaryBis, 0.2);
+  }
+}
+
+.games {
+  .dock {
+    background-color: rgba(colors.$primary, 1);
+    box-shadow: 5px 15px 20px rgba(colors.$primaryBis, 0.06);
+  }
+  .dock:hover {
+    background-color: rgba(colors.$primaryBis, 0.2);
   }
 }

@@ -13,6 +13,20 @@ body {
   height: 100dvh;
   width: 100vw;
   overflow: scroll;
+  font-family: "Reddit Mono", Arial, sans-serif;
+}
+
+.page {
+  flex: 1;
+  height: 100vh;
+  height: 100dvh;
+  width: 100wh;
+  overflow: hidden;
+  background-color: #012030;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(18, 1fr);
+  color: #F1F7F6;
 }
 
 .test {
@@ -28,7 +42,11 @@ body {
 .title1 {
   font-family: "Passion One", Impact, sans-serif;
   letter-spacing: 0.1em;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  grid-row: 2;
+  grid-column: 1;
+  position: relative;
+  text-transform: uppercase;
 }
 
 .title2 {
@@ -89,10 +107,11 @@ body {
 .glass {
   height: 100%;
   width: 100%;
-  background-color: rgba(241, 247, 246, 0.3);
-  box-shadow: 5px 15px 20px rgba(8, 26, 26, 0.06);
-  border: 2px solid rgba(241, 247, 246, 0.05);
-  filter: blur(5px);
+  background-color: rgba(1, 32, 48, 0.8);
+  box-shadow: 5px 15px 20px rgba(1, 32, 48, 0.06);
+  border: 2px solid rgba(241, 247, 246, 0.01);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   overflow: hidden;
 }
 
@@ -100,15 +119,19 @@ body {
   height: 100%;
   width: 100%;
   background: radial-gradient(circle, rgba(212, 255, 248, 0.05) 0%, rgba(190, 236, 255, 0.05) 100%);
-  background-color: #081A1A;
   display: flex;
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .title1 {
   font-family: "Passion One", Impact, sans-serif;
   letter-spacing: 0.1em;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  grid-row: 2;
+  grid-column: 1;
+  position: relative;
+  text-transform: uppercase;
 }
 
 .title2 {
@@ -138,41 +161,6 @@ body {
   border: 3px solid #13678A;
 }
 
-.dock {
-  grid-column: 7/12;
-  grid-row: 18/span 1;
-  height: 33%;
-  width: 33%;
-  background-color: #9AEBA3;
-  border-radius: 16px;
-  overflow: hidden;
-  transition: all 0.6s ease;
-  justify-self: center;
-  align-self: end;
-}
-.dock .glassFilter {
-  justify-content: center;
-  align-items: center;
-}
-.dock .dockIcon {
-  opacity: 0;
-  height: 3vh;
-  transition: all 1s ease;
-}
-
-.dock:hover {
-  height: 100%;
-  width: 100%;
-  margin-bottom: 1vh;
-  backdrop-filter: blur(20px);
-  background-color: rgba(19, 103, 138, 0.2);
-  box-shadow: 5px 15px 20px rgba(8, 26, 26, 0.06);
-  border: 2px solid rgba(241, 247, 246, 0.05);
-}
-.dock:hover .dockIcon {
-  opacity: 100%;
-}
-
 .Header {
   display: grid;
   grid-template-columns: repeat(18, 1fr);
@@ -189,6 +177,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 2rem;
+  color: #F1F7F6;
 }
 
 .logoH2 {
@@ -220,6 +209,7 @@ body {
   overflow: hidden;
   padding: 10px;
   flex: 1;
+  transition: all 0.3s ease;
 }
 
 .searchBarInput {
@@ -233,20 +223,7 @@ body {
 
 .searchBarInput:focus {
   outline: none;
-}
-
-.home {
-  flex: 1;
-  height: 100vh;
-  height: 100dvh;
-  width: 100wh;
-  overflow: hidden;
   background-color: #012030;
-  display: grid;
-  grid-template-columns: repeat(18, 1fr);
-  grid-template-rows: repeat(18, 1fr);
-  font-family: "Reddit Mono", Arial, sans-serif;
-  color: #F1F7F6;
 }
 
 .homeBackground {
@@ -313,16 +290,17 @@ body {
 }
 
 .games {
-  background-color: white;
-  font-family: "Reddit Mono", Arial, sans-serif;
-  color: #F1F7F6;
+  padding: 1vh 1vw;
+  background-color: #012030;
+  background: linear-gradient(30deg, rgb(8, 26, 26) 0%, rgb(1, 32, 48) 26%, rgb(10, 62, 84) 63%, rgb(1, 32, 48) 96%);
 }
 
 .gameCards {
+  grid-column: 1/span 18;
+  grid-row: 2/span 17;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 10px;
+  overflow-y: scroll;
 }
 
 .gameCardItem {
@@ -336,6 +314,54 @@ body {
 
 .gameImg {
   width: 100%;
+}
+
+.dock {
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  grid-column: 7/12;
+  grid-row: 18/span 1;
+  align-self: end;
+  justify-self: center;
+  height: 8px;
+  width: 90px;
+  margin-bottom: 1vh;
+  transition: all 0.6s ease;
+  border-radius: 16px;
+}
+.dock .glassFilter {
+  justify-content: center;
+  align-items: center;
+}
+.dock .dockIcon {
+  opacity: 0;
+  height: 3vh;
+  transition: all 1s ease;
+}
+
+.dock:hover {
+  height: 32px;
+  width: 300px;
+}
+.dock:hover .dockIcon {
+  opacity: 100%;
+}
+
+.home .dock {
+  background-color: #f1f7f6;
+  box-shadow: 5px 15px 20px rgba(19, 103, 138, 0.06);
+}
+.home .dock:hover {
+  background-color: rgba(19, 103, 138, 0.2);
+}
+
+.games .dock {
+  background-color: #012030;
+  box-shadow: 5px 15px 20px rgba(19, 103, 138, 0.06);
+}
+.games .dock:hover {
+  background-color: rgba(19, 103, 138, 0.2);
 }
 
 /*# sourceMappingURL=app.css.map */
