@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Dock from '../component/Dock.jsx';
 import Header from "../component/Header.jsx";
-import SearchMode from "../component/SearchMode.jsx";
 
 const Home = ({ list }) => {
     const [gameList, setGameList] = useState([]);
     const [randomResult, setRandomResult] = useState({});
+
 
     useEffect(() => {
         if (list && list.length > 0) {
@@ -25,7 +25,6 @@ const Home = ({ list }) => {
                 </div>
                 <div className="homeContent">
                     <Header />
-                    <SearchMode />
                     <div className="homeDetails">
                         {/* Ajout d'une vérification pour s'assurer que randomResult est défini */}
                         {randomResult && (
@@ -34,7 +33,7 @@ const Home = ({ list }) => {
                                 <ul className='homeList'>
                                     {/* Utilisation de map() seulement si randomResult.genres est un tableau */}
                                     {randomResult.genres && randomResult.genres.map(genre => (
-                                        <li key={genre.id}>{genre.name}</li>
+                                        <li key={crypto.randomUUID()}>{genre.name}</li>
                                     ))}
                                 </ul>
                             </>

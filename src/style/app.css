@@ -12,7 +12,6 @@ body {
   height: 100vh;
   height: 100dvh;
   width: 100vw;
-  overflow: hidden;
   font-family: "Reddit Mono", Arial, sans-serif;
 }
 
@@ -37,6 +36,10 @@ body {
 
 .none {
   display: none;
+}
+
+.unvisible {
+  opacity: 0%;
 }
 
 .title1 {
@@ -227,11 +230,14 @@ body {
 }
 
 .searchMode {
-  background-color: rgba(19, 103, 138, 0.5);
+  height: 100%;
+  width: 100%;
+  background-color: rgba(19, 103, 138, 0.6);
   position: relative;
   grid-row: 2/span 17;
   grid-column: 1/span 18;
   border-radius: 30px;
+  transition: all 0.25s ease;
 }
 
 .homeBackground {
