@@ -11,9 +11,6 @@ $blur: 5px;
   backdrop-filter: blur($blur);
   -webkit-backdrop-filter: blur($blur);
   overflow: hidden;
-
-
-
 }
 
 .glassFilter {

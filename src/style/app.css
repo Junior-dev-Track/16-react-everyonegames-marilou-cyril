@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Gurajada&family=Passion+One:wght@400;700;900&family=Reddit+Mono:wght@200..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Gurajada&family=Passion+One:wght@400;700;900&family=Reddit+Mono:wght@200..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -40,71 +39,6 @@ body {
 
 .unvisible {
   opacity: 0;
-}
-
-.title1 {
-  font-family: "Passion One", Impact, sans-serif;
-  letter-spacing: 0.1em;
-  font-size: 1.5rem;
-  grid-row: 2;
-  grid-column: 1;
-  position: relative;
-  text-transform: uppercase;
-}
-
-.title2 {
-  font-family: "Gurajada", arial, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 1.5rem;
-}
-
-.ErrorPage {
-  height: 100vh;
-  height: 100dvh;
-  width: 100vw;
-  background: linear-gradient(30deg, #012030 0%, #13678A 35%, #DAFDBA 100%);
-  display: grid;
-  grid-template-columns: repeat(18, 1fr);
-  grid-template-rows: repeat(18, 1fr);
-}
-
-.glassyest {
-  background-color: rgba(241, 247, 246, 0.06);
-  box-shadow: 5px 15px 20px rgba(8, 26, 26, 0.06);
-  border: 2px solid rgba(241, 247, 246, 0.05);
-  border-radius: 50px;
-  overflow: hidden;
-}
-
-.glassFiltertest {
-  height: 100%;
-  width: 100%;
-  background: radial-gradient(circle, rgba(212, 255, 248, 0.05) 0%, rgba(190, 236, 255, 0.05) 100%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.card {
-  grid-column: 8/span 3;
-  grid-row: 8/span 3;
-  text-align: center;
-}
-
-.cardContent {
-  padding: 15px;
-}
-
-.paragraph {
-  font-family: "Sarabun", arial, sans-serif;
-  font-size: 1rem;
-  color: #F1F7F6;
-}
-
-.txtShadow {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.03);
 }
 
 .glass {
@@ -232,12 +166,33 @@ body {
 .searchMode {
   height: 100%;
   width: 100%;
-  background-color: rgba(19, 103, 138, 0.6);
+  background-color: rgba(241, 247, 246, 0.9);
+  padding: 30px;
   position: relative;
-  grid-row: 2/span 17;
-  grid-column: 1/span 18;
+  grid-row: 2/auto;
+  grid-column: 3/span 12;
   border-radius: 30px;
   transition: all 0.25s ease;
+  display: flex;
+}
+
+.searchResults {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #13678A;
+  line-height: 1em;
+  font-family: "Gurajada";
+  font-size: 1.5rem;
+}
+
+.searchResult:hover {
+  color: #45C4B0;
+}
+
+.searchResult:active {
+  color: #9AEBA3;
 }
 
 .homeBackground {
@@ -375,6 +330,39 @@ body {
 }
 .games .dock:hover {
   background-color: rgba(19, 103, 138, 0.2);
+}
+
+.error {
+  background: linear-gradient(30deg, rgb(8, 26, 26) 0%, rgb(1, 32, 48) 26%, rgb(10, 62, 84) 63%, rgb(1, 32, 48) 96%);
+  display: flex;
+}
+
+.glassErr {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(241, 247, 246, 0.8);
+  box-shadow: 5px 15px 20px rgba(241, 247, 246, 0.06);
+  border: 2px solid rgba(241, 247, 246, 0.01);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  overflow: hidden;
+}
+
+.glassFilterErr {
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle, rgba(212, 255, 248, 0.05) 0%, rgba(190, 236, 255, 0.05) 100%);
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=app.css.map */

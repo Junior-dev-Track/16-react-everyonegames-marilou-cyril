@@ -8,12 +8,14 @@ const Home = ({ list }) => {
 
 
     useEffect(() => {
+
         if (list && list.length > 0) {
             setGameList(list);
             console.log(list)
             const randomIndex = Math.floor(Math.random() * list.length);
             setRandomResult(list[randomIndex]);
         }
+
     }, [list]);
 
 

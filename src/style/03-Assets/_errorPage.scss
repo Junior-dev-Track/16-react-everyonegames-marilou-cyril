@@ -1,0 +1,36 @@
+@use "../01-Color/colors";
+$blur : 5px;
+
+.error {
+  background: colors.$GradientC;
+  display: flex;
+}
+
+.glassErr {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(colors.$white, 0.8);
+  box-shadow: 5px 15px 20px rgba(colors.$white, 0.06);
+  border: 2px solid rgba(colors.$white, 0.01);
+  backdrop-filter: blur($blur);
+  -webkit-backdrop-filter: blur($blur);
+  overflow: hidden;
+}
+
+.glassFilterErr {
+  height: 100%;
+  width: 100%;
+  background: colors.$GradientB;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur($blur);
+  -webkit-backdrop-filter: blur($blur);
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  border-radius: 10px;
+
+}

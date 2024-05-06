@@ -1,7 +1,6 @@
 // Global
 @use "00-Global/reset";
 @use "./00-Global/test";
-@use "../../test/ErrorPageTest";
 
 // Color
 @use "./01-Color/colors";
@@ -18,3 +17,4 @@
 @use "./03-Assets/home";
 @use "./03-Assets/games";
 @use "./03-Assets/dock";
+@use "./03-Assets/errorPage";

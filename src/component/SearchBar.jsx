@@ -62,14 +62,14 @@ const SearchBar = () => {
     return (
         <>
             <form className="searchBar" onSubmit={(event) => handleSubmit(event)}>
-                <input type='text' placeholder='Recherche' onFocus={handleFocus} onBlur={handleFocus} onChange={handleChange} value={searchValue} className='searchBarInput'/>
+                <input type='search' placeholder='Recherche' onFocus={handleFocus} onBlur={handleFocus} onChange={handleChange} value={searchValue} className='searchBarInput'/>
                 <button type='submit' className='button submit'>Search</button>
             </form>
             <div className={`searchMode ${isActive ? '' : 'unvisible'}`}>
-                <ul>
+                <ul className={'searchResults'}>
                     {searchResults.length > 0 ? (
                         searchResults.map((game) => (
-                            <li key={crypto.randomUUID()}>{game.name}</li>
+                            <li key={crypto.randomUUID()} className={'searchResult'}>{game.name}</li>
                         //     le li devrais renvoyer vers un lien qui donne l'id du jeu et ses données pours les afficher.
                         ))
                     ) : (

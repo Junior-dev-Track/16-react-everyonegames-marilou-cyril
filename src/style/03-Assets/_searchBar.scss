@@ -34,11 +34,33 @@
 .searchMode{
   height: 100%;
   width: 100%;
-  background-color: rgba(colors.$primaryBis, 0.6);
+  background-color: rgba(colors.$white, 0.9);
+  padding: 30px;
   position: relative;
-  grid-row: 2 / span 17;
-  grid-column: 1 / span 18;
+  grid-row: 2 / auto;
+  grid-column: 3 / span 12;
   border-radius: 30px;
   transition: all 0.25s ease;
+  display: flex;
 }
 
+
+.searchResults {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: colors.$primaryBis;
+  line-height: 1em;
+  font-family: 'Gurajada';
+  font-size: 1.5rem;
+  //background-color: #081A1A;
+}
+
+.searchResult:hover {
+  color: colors.$secondary;
+}
+
+.searchResult:active {
+  color: colors.$secondaryBis;
+}
