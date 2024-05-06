@@ -12,6 +12,20 @@ body {
   height: 100dvh;
   width: 100vw;
   font-family: "Reddit Mono", Arial, sans-serif;
+  overflow: hidden;
+}
+
+.home {
+  height: 100vh;
+  height: 100dvh;
+  width: 100vw;
+  overflow-y: scroll;
+  background-color: #012030;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  visibility: hidden;
 }
 
 .page {
@@ -20,7 +34,6 @@ body {
   height: 100dvh;
   width: 100wh;
   overflow: hidden;
-  background-color: #012030;
   display: grid;
   grid-template-columns: repeat(18, 1fr);
   grid-template-rows: repeat(18, 1fr);
