@@ -27,8 +27,10 @@ const SearchBar = () => {
     }, [isActive]);
 
     const handleFocus = () => {
-        setIsActive(!isActive)
         setSearchResults([])
+    }
+    const handleBlur = () => {
+        setIsActive(false)
     }
 
     const handleSubmit = async (event) => {
@@ -50,6 +52,7 @@ const SearchBar = () => {
         console.log(results)
 
         setSearchResults(results)
+        setIsActive(!isActive)
         setSearchValue('')
     }
     const handleChange = (event) => {
@@ -62,7 +65,7 @@ const SearchBar = () => {
     return (
         <>
             <form className="searchBar" onSubmit={(event) => handleSubmit(event)}>
-                <input type='search' placeholder='Recherche' onFocus={handleFocus} onBlur={handleFocus} onChange={handleChange} value={searchValue} className='searchBarInput'/>
+                <input type='search' placeholder='Recherche' onFocus={handleFocus} onBlur={handleBlur} onChange={handleChange} value={searchValue} className='searchBarInput'/>
                 <button type='submit' className='button submit'>Search</button>
             </form>
             <div className={`searchMode ${isActive ? '' : 'unvisible'}`}>
